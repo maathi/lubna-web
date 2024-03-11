@@ -2,6 +2,7 @@
 import { BookRoutes } from "@/features/book"
 import { Route, Routes, useRoutes } from "react-router-dom"
 import { protectedRoutes } from "./protected"
+import { publicRoutes } from "./public"
 // import { Landing } from '@/features/misc';
 // import { useAuth } from '@/lib/auth';
 
@@ -21,6 +22,6 @@ export const AppRoutes = (props: any) => {
   //   { path: "/books", element: <BookRoutes /> },
   //   { path: "*", element: <div>not found</div> },
   // ])
-  const element = useRoutes(protectedRoutes)
+  const element = useRoutes(publicRoutes)
   return <>{element}</>
 }

@@ -12,7 +12,7 @@ import Axios, { AxiosRequestConfig } from "axios"
 //   config.headers.Accept = 'application/json';
 //   return config;
 // }
-const API_URL = "http://0.0.0.0:8055/"
+const API_URL = "http://localhost:1337/api/"
 
 export const axios = Axios.create({
   baseURL: API_URL,

@@ -1,3 +1,4 @@
+import { MainLayout } from "@/components/layout"
 import { BookRoutes } from "@/features/book"
 import { Suspense } from "react"
 import { Link, Navigate, Outlet } from "react-router-dom"
@@ -19,15 +20,14 @@ import { Link, Navigate, Outlet } from "react-router-dom"
 // };
 const App = () => {
   return (
-    <div>
+    <MainLayout>
       <strong>
-        <p>LUBNA</p>
         <ul>
           <Link to="books/search">search</Link>
         </ul>
         <Outlet />
       </strong>
-    </div>
+    </MainLayout>
   )
 }
 export const protectedRoutes = [
